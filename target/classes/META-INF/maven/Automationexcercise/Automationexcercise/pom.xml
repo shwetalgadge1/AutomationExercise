@@ -92,11 +92,12 @@
         <artifactId>commons-collections4</artifactId>
         <version>4.4</version>
     </dependency>
+     <!-- Extent Reports Dependency -->
     <dependency>
         <groupId>com.aventstack</groupId>
         <artifactId>extentreports</artifactId>
-        <version>5.0.6</version>
-    </dependency>  
+        <version>5.0.9</version>
+    </dependency> 
 	<dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>

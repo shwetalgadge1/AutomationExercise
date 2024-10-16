@@ -10,13 +10,6 @@
           <include name="testClickSignUp"/>
         </methods>
       </class> <!-- com.test.HomepageTest -->
-      <class name="com.test.ProductPageTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="testPrintProductDetails"/>
-        </methods>
-      </class> <!-- com.test.ProductPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 public class Basepage {
 	  protected WebDriver driver;
 
-	    @FindBy(xpath = "//i[contains(@class,'fa fa-lock')]") // Replace with the actual locator
+	    @FindBy(xpath = "//i[contains(@class,'fa fa-lock')]") 
 	    protected WebElement signUpLink;
 
 //	    @FindBy(id = "signing-link") // Replace with the actual locator
@@ -18,7 +18,7 @@ public class Basepage {
 	        this.driver = driver;
 	        PageFactory.initElements(driver, this);
 	    }
-
+	    
 	    public void goToSignupPage() {}
 
 //	    public void goToLoginPage() {

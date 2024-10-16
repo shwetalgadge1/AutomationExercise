@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 2 failed,   3 passed</span>
+                    <span class="method-stats">11 methods, 1 failed,   10 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -107,11 +107,6 @@
                         <a href="#" panel-name="suite-Suite" title="com.test.HomepageTest" class="method navigator-link" hash-for-method="testClickSignUp">testClickSignUp</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.test.ProductPageTest" class="method navigator-link" hash-for-method="testPrintProductDetails">testPrintProductDetails</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
@@ -121,6 +116,11 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.ProductPageTest" class="method navigator-link" hash-for-method="testClickEachProductAndPrintPrice">testClickEachProductAndPrintPrice</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.test.HomepageTest" class="method navigator-link" hash-for-method="testClickSignIn">testClickSignIn</a> <!-- method navigator-link -->
@@ -134,6 +134,36 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.test.LoginTest" class="method navigator-link" hash-for-method="testLogin">testLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.TestProductDetails" class="method navigator-link" hash-for-method="testTshirtDetails">testTshirtDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.TestBabyhugProducts" class="method navigator-link" hash-for-method="verifyProductNames">verifyProductNames</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.TestAllProducts" class="method navigator-link" hash-for-method="verifyProductNamesAndPrices">verifyProductNamesAndPrices</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.ExtentReportListener" class="method navigator-link" hash-for-method="verifyProductNamesAndPrices">verifyProductNamesAndPrices</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.TestBabyhugProducts" class="method navigator-link" hash-for-method="verifyProductPrices">verifyProductPrices</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.TestBabyhugProducts" class="method navigator-link" hash-for-method="verifyTotalProducts">verifyTotalProducts</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -160,14 +190,14 @@
                   </a> <!-- testClickSignUp -->
                   <span class="method-name">testClickSignUp</span>
                   <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@href=&apos;/signup&apos;]&quot;}
-  (Session info: chrome=127.0.6533.100)
+  (Session info: chrome=129.0.6668.101)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8d6315ee038c00d3cc5f70ba907bd86e, findElement {using=xpath, value=//a[@href=&apos;/signup&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: C:\Users\shree\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:1846}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:1846/devtool..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8d6315ee038c00d3cc5f70ba907bd86e
+Command: [55ec5458cc82a48447c240bfae53ab42, findElement {value=//a[@href=&apos;/signup&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\shree\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:6379}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:6379/devtool..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 55ec5458cc82a48447c240bfae53ab42
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -181,7 +211,7 @@ Session ID: 8d6315ee038c00d3cc5f70ba907bd86e
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
 	at com.pom.Homepage.clickSignUp(Homepage.java:28)
 	at com.test.HomepageTest.testClickSignUp(HomepageTest.java:41)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
@@ -191,34 +221,50 @@ Session ID: 8d6315ee038c00d3cc5f70ba907bd86e
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.test.ProductPageTest</span>
+              <img src="passed.png"/>
+              <span class="class-name">com.test.ExtentReportListener</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testPrintProductDetails">
-                  </a> <!-- testPrintProductDetails -->
-                  <span class="method-name">testPrintProductDetails</span>
-                  <div class="stack-trace">java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
-	at java.base/java.util.Objects.checkIndex(Objects.java:365)
-	at java.base/java.util.ArrayList.get(ArrayList.java:428)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.get(Unknown Source)
-	at com.pom.ProductPage.printProductDetails(ProductPage.java:29)
-	at com.test.ProductPageTest.testPrintProductDetails(ProductPageTest.java:27)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 27 stack frames
-</div> <!-- stack-trace -->
+                  <a name="verifyProductNamesAndPrices">
+                  </a> <!-- verifyProductNamesAndPrices -->
+                  <span class="method-name">verifyProductNamesAndPrices</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.test.TestBabyhugProducts</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProductNames">
+                  </a> <!-- verifyProductNames -->
+                  <span class="method-name">verifyProductNames</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProductPrices">
+                  </a> <!-- verifyProductPrices -->
+                  <span class="method-name">verifyProductPrices</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTotalProducts">
+                  </a> <!-- verifyTotalProducts -->
+                  <span class="method-name">verifyTotalProducts</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -256,6 +302,51 @@ Session ID: 8d6315ee038c00d3cc5f70ba907bd86e
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.test.TestAllProducts</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProductNamesAndPrices">
+                  </a> <!-- verifyProductNamesAndPrices -->
+                  <span class="method-name">verifyProductNamesAndPrices</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.test.ProductPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testClickEachProductAndPrintPrice">
+                  </a> <!-- testClickEachProductAndPrintPrice -->
+                  <span class="method-name">testClickEachProductAndPrintPrice</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.test.TestProductDetails</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTshirtDetails">
+                  </a> <!-- testTshirtDetails -->
+                  <span class="method-name">testTshirtDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -268,10 +359,14 @@ Session ID: 8d6315ee038c00d3cc5f70ba907bd86e
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;com.test.TestAllProducts&quot;/&gt;
       &lt;class name=&quot;com.test.Basetest&quot;/&gt;
       &lt;class name=&quot;com.test.HomepageTest&quot;/&gt;
-      &lt;class name=&quot;com.test.LoginTest&quot;/&gt;
+      &lt;class name=&quot;com.test.TestBabyhugProducts&quot;/&gt;
       &lt;class name=&quot;com.test.ProductPageTest&quot;/&gt;
+      &lt;class name=&quot;com.test.ExtentReportListener&quot;/&gt;
+      &lt;class name=&quot;com.test.TestProductDetails&quot;/&gt;
+      &lt;class name=&quot;com.test.LoginTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -285,7 +380,7 @@ Session ID: 8d6315ee038c00d3cc5f70ba907bd86e
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (4 classes)</span>
+                <span class="test-name">Test (8 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -311,32 +406,56 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(11);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testInvalidLogin')
-data.setCell(0, 2, 'com.test.LoginTest')
-data.setCell(0, 3, 1699);
+data.setCell(0, 1, 'verifyProductNamesAndPrices')
+data.setCell(0, 2, 'com.test.TestAllProducts')
+data.setCell(0, 3, 4325);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testClickSignIn')
-data.setCell(1, 2, 'com.test.HomepageTest')
-data.setCell(1, 3, 1469);
+data.setCell(1, 1, 'verifyProductNamesAndPrices')
+data.setCell(1, 2, 'com.test.ExtentReportListener')
+data.setCell(1, 3, 3542);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testLogin')
+data.setCell(2, 1, 'testInvalidLogin')
 data.setCell(2, 2, 'com.test.LoginTest')
-data.setCell(2, 3, 497);
+data.setCell(2, 3, 2891);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testPrintProductDetails')
-data.setCell(3, 2, 'com.test.ProductPageTest')
-data.setCell(3, 3, 76);
+data.setCell(3, 1, 'testClickSignIn')
+data.setCell(3, 2, 'com.test.HomepageTest')
+data.setCell(3, 3, 2622);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testClickSignUp')
-data.setCell(4, 2, 'com.test.HomepageTest')
-data.setCell(4, 3, 39);
+data.setCell(4, 1, 'testLogin')
+data.setCell(4, 2, 'com.test.LoginTest')
+data.setCell(4, 3, 881);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyProductNames')
+data.setCell(5, 2, 'com.test.TestBabyhugProducts')
+data.setCell(5, 3, 299);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyTotalProducts')
+data.setCell(6, 2, 'com.test.TestBabyhugProducts')
+data.setCell(6, 3, 259);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testTshirtDetails')
+data.setCell(7, 2, 'com.test.TestProductDetails')
+data.setCell(7, 3, 239);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyProductPrices')
+data.setCell(8, 2, 'com.test.TestBabyhugProducts')
+data.setCell(8, 3, 171);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testClickSignUp')
+data.setCell(9, 2, 'com.test.HomepageTest')
+data.setCell(9, 3, 111);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testClickEachProductAndPrintPrice')
+data.setCell(10, 2, 'com.test.ProductPageTest')
+data.setCell(10, 3, 84);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 15 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -362,61 +481,127 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.test.HomepageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.test.TestAllProducts</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUp</span>
+                <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <span class="method-name">verifyProductNamesAndPrices</span>
+                <span class="method-start">14742 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">19080 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.test.HomepageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">19441 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
                 <span class="method-name">testClickSignIn</span>
-                <span class="method-start">5302 ms</span>
+                <span class="method-start">24268 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testClickSignUp</span>
-                <span class="method-start">6782 ms</span>
+                <span class="method-start">26898 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">6825 ms</span>
+                <span class="method-start">27034 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.test.TestBabyhugProducts</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">27317 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">verifyProductNames</span>
+                <span class="method-start">33040 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyProductPrices</span>
+                <span class="method-start">33347 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyTotalProducts</span>
+                <span class="method-start">33521 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">33782 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.test.ProductPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">34011 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testClickEachProductAndPrintPrice</span>
+                <span class="method-start">39632 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">39719 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.test.ExtentReportListener</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">40027 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">verifyProductNamesAndPrices</span>
+                <span class="method-start">47441 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">50985 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.test.TestProductDetails</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">52365 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testTshirtDetails</span>
+                <span class="method-start">57671 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">57914 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.test.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">7261 ms</span>
+                <span class="method-start">58224 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testInvalidLogin</span>
-                <span class="method-start">11961 ms</span>
+                <span class="method-start">62734 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testLogin</span>
-                <span class="method-start">13662 ms</span>
+                <span class="method-start">65629 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">14166 ms</span>
+                <span class="method-start">66514 ms</span>
               </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.test.ProductPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">14659 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">testPrintProductDetails</span>
-                <span class="method-start">19100 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">19179 ms</span>
-              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

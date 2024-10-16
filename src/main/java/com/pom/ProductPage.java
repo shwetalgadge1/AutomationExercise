@@ -2,44 +2,76 @@ package com.pom;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.By;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import java.time.Duration;
 import java.util.List;
 
 public class ProductPage {
 
-	 private WebDriver driver;
+    private WebDriver driver;
+    private WebDriverWait wait;
 
-	    @FindBy(xpath ="//h2[contains(text(),'All Products')]")
-	    private WebElement allProductsSection;
+    
+    @FindBy(xpath = "//a[normalize-space()='Women']")
+    private WebElement womenSection;
 
-	    @FindBy(xpath ="//div[@class='overlay-content']//p")
-	    private List<WebElement> productName;
+  
+    @FindBy(xpath = "//div[@id='Women']//a[contains(text(),'Dress')]")
+    private List<WebElement> productLinks;
 
-	    @FindBy(xpath ="//div[@class='overlay-content']//h2")
-	    private List<WebElement> productPrices;
+    @FindBy(xpath = "//span[contains(@class,'price')]")
+    private WebElement productPrice;
+    
+    public ProductPage(WebDriver driver) {
+        this.driver = driver;
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10)); 
+    }
 
-	    public ProductPage(WebDriver driver) {
-	        this.driver = driver;
-	        PageFactory.initElements(driver, this);
-	    }
+    public void clickEachProductAndPrintPrice() {
+        try {
+            
+            wait.until(ExpectedConditions.elementToBeClickable(womenSection)).click();
+            
+           
+            List<WebElement> links = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='Women']//a[contains(text(),'Dress')]")));
+            
+            if (!links.isEmpty()) {
+                for (int i = 0; i < links.size(); i++) {
+                    WebElement productLink = links.get(i);
 
-		public void printProductDetails1() {
-			// TODO Auto-generated method stub
-			
-		}
+                  
+                    wait.until(ExpectedConditions.elementToBeClickable(productLink)).click();
+                   
+                    wait.until(ExpectedConditions.visibilityOf(productPrice));
 
-	    public void printProductDetails() {
-	    	if (productName.size() == productPrices.size() && !productName.isEmpty()) {
-	            for (int i = 0; i < productName.size(); i++) {
-	                String name = productName.get(i).getText();
-	                String price = productPrices.get(i).getText();
-	                System.out.println("Product: " + name + ", Price: " + price);
-	            }
-	        } else if (productName.isEmpty() || productPrices.isEmpty()) {
-	            System.out.println("Product names or prices are not loaded.");
-	        } else {
-	            System.out.println("Mismatch between product names and prices count.");
-	        }
-	    }
-}
+                   
+                    String productName = productLink.getText();
+
+                    // Get the product price
+                    String price = productPrice.getText();
+                    System.out.println("Product: " + productName + ", Price: " + price);
+
+                  
+                    driver.navigate().back();
+                    
+                    // Wait for the product list to reload and reinitialize the product links
+                    wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[normalize-space()='Women']")));
+                    wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='Women']//a[contains(text(),'Dress')]")));
+                    links = driver.findElements(By.xpath("//div[@id='Women']//a[contains(text(),'Dress')]"));
+                }
+            } else {
+                System.out.println("No products found in the Women section.");
+            }
+        } catch (Exception e) {
+            System.out.println("An error occurred while clicking on products and printing prices: " + e.getMessage());
+            List<WebElement> DressesPrices = driver.findElements(By.cssSelector("div[class='product-information'] span span"));
+            for(WebElement e1:DressesPrices ) {
+           	 System.out.println(e1.getText());
+        }
+    }
+
+    }}

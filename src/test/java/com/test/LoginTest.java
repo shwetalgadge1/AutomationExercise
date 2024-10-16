@@ -30,8 +30,8 @@ public class LoginTest {
     @Test
     public void testLogin() {
         // Perform login action with valid credentials
-        String email = "sravani08.guduru@gmail.com"; // Replace with valid email
-        String password = "Srevas@08";   // Replace with valid password
+        String email = "gadgeshwetal@gmail.com"; 
+        String password = "Sweety12@";  
         
         loginpage.login(email, password);
         

@@ -1,43 +1,57 @@
 package com.test;
 
+import java.util.List;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.pom.ProductPage;
 
 public class ProductPageTest {
-	  private WebDriver driver;
-	    private ProductPage productPage;
 
-	    @BeforeMethod
-	    public void setUp() {
-	        // Initialize ChromeDriver
-	        driver = new ChromeDriver();
-	        driver.manage().window().maximize();
-	        driver.get("https://www.automationexercise.com/products");
-	        productPage = new ProductPage(driver);
-	    }
+    private WebDriver driver;
+    private ProductPage productPage;
 
-	    @Test
-	    public void testPrintProductDetails() {
-	    	try {
-	            productPage.printProductDetails();
-	            // Add assertions here if needed
-	        } catch (Exception e) {
-	            Assert.fail("Test failed due to exception: " + e.getMessage());
-	        }
-	    }
-	    
+    @BeforeClass
+    public void setUp() {
+      
+     
 
-	    @AfterMethod
-	    public void tearDown() {
-	        if (driver != null) {
-	            driver.quit();
-	        }
-	    }
+      
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--start-maximized"); 
 
+       
+        driver = new ChromeDriver(options);
+
+       
+        driver.get("https://www.automationexercise.com/product_details");
+
+    
+        productPage = new ProductPage(driver);
+    }
+
+    @Test
+    public void testClickEachProductAndPrintPrice() {
+       
+        productPage.clickEachProductAndPrintPrice();
+        
+    
+
+   
+    }
+    
+    @AfterClass
+    public void tearDown() {
+      
+        if (driver != null) {
+            driver.quit();
+        }
+    }
 }
