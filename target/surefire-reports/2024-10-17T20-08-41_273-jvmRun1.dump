@@ -1,4 +1,4 @@
-# Created at 2024-10-17T10:34:39.781
+# Created at 2024-10-17T20:08:42.134
 java.lang.NoSuchMethodError: org.testng.TestNG.configure(Ljava/util/Map;)V
 	at org.apache.maven.surefire.testng.conf.TestNGMapConfigurator.configure(TestNGMapConfigurator.java:57)
 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:132)
