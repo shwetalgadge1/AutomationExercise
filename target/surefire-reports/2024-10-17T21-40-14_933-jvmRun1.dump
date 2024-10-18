@@ -1,0 +1,13 @@
+# Created at 2024-10-17T21:40:19.262
+java.lang.NoSuchMethodError: org.testng.TestNG.configure(Ljava/util/Map;)V
+	at org.apache.maven.surefire.testng.conf.TestNGMapConfigurator.configure(TestNGMapConfigurator.java:56)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:148)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:192)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:93)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+
+

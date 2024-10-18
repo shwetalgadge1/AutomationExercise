@@ -8,11 +8,50 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">28,945</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">13</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">144,232</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.test.ActionClassTest</td><td><a href="#m0">testActions</a></td><td rowspan="1">1729159375005</td><td rowspan="1">22629</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.test.HomepageTest</td><td><a href="#m0">testClickSignUp</a></td><td rowspan="1">1729177303257</td><td rowspan="1">21</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.test.ActionClassTest</td><td><a href="#m1">testActions</a></td><td rowspan="1">1729177266900</td><td rowspan="1">22135</td></tr><tr class="passedodd"><td rowspan="1">com.test.BrokenLinks</td><td><a href="#m2">testBrokenLinks</a></td><td rowspan="1">1729177329917</td><td rowspan="1">26949</td></tr><tr class="passedeven"><td rowspan="1">com.test.ExtentReportListener</td><td><a href="#m3">verifyProductNamesAndPrices</a></td><td rowspan="1">1729177324061</td><td rowspan="1">1620</td></tr><tr class="passedodd"><td rowspan="1">com.test.HomepageTest</td><td><a href="#m4">testClickSignIn</a></td><td rowspan="1">1729177301654</td><td rowspan="1">1602</td></tr><tr class="passedeven"><td rowspan="2">com.test.LoginTest</td><td><a href="#m5">testInvalidLogin</a></td><td rowspan="1">1729177401912</td><td rowspan="1">1850</td></tr><tr class="passedeven"><td><a href="#m6">testLogin</a></td><td rowspan="1">1729177403762</td><td rowspan="1">284</td></tr><tr class="passedodd"><td rowspan="1">com.test.ProductDetailsTest</td><td><a href="#m7">captureProductDetails</a></td><td rowspan="1">1729177364080</td><td rowspan="1">33108</td></tr><tr class="passedeven"><td rowspan="1">com.test.ProductPageTest</td><td><a href="#m8">testClickEachProductAndPrintPrice</a></td><td rowspan="1">1729177319348</td><td rowspan="1">17</td></tr><tr class="passedodd"><td rowspan="1">com.test.TestAllProducts</td><td><a href="#m9">verifyProductNamesAndPrices</a></td><td rowspan="1">1729177294379</td><td rowspan="1">1410</td></tr><tr class="passedeven"><td rowspan="3">com.test.TestBabyhugProducts</td><td><a href="#m10">verifyProductNames</a></td><td rowspan="1">1729177306344</td><td rowspan="1">128</td></tr><tr class="passedeven"><td><a href="#m11">verifyProductPrices</a></td><td rowspan="1">1729177306473</td><td rowspan="1">66</td></tr><tr class="passedeven"><td><a href="#m12">verifyTotalProducts</a></td><td rowspan="1">1729177306540</td><td rowspan="1">68</td></tr><tr class="passedodd"><td rowspan="1">com.test.TestProductDetails</td><td><a href="#m13">testTshirtDetails</a></td><td rowspan="1">1729177359947</td><td rowspan="1">128</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.test.ActionClassTest#testActions</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">com.test.HomepageTest#testClickSignUp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@href=&apos;/signup&apos;]&quot;}
+  (Session info: chrome=129.0.6668.101)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a9989da5b810045a784620cf0f751ffb, findElement {using=xpath, value=//a[@href=&apos;/signup&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\shree\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:10846}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:10846/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a9989da5b810045a784620cf0f751ffb
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+	at com.pom.Homepage.clickSignUp(Homepage.java:28)
+	at com.test.HomepageTest.testClickSignUp(HomepageTest.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.test.ActionClassTest#testActions</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.test.BrokenLinks#testBrokenLinks</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.test.ExtentReportListener#verifyProductNamesAndPrices</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.test.HomepageTest#testClickSignIn</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.test.LoginTest#testInvalidLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.test.LoginTest#testLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.test.ProductDetailsTest#captureProductDetails</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.test.ProductPageTest#testClickEachProductAndPrintPrice</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.test.TestAllProducts#verifyProductNamesAndPrices</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.test.TestBabyhugProducts#verifyProductNames</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.test.TestBabyhugProducts#verifyProductPrices</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">com.test.TestBabyhugProducts#verifyTotalProducts</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">com.test.TestProductDetails#testTshirtDetails</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

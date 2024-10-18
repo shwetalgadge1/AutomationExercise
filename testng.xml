@@ -3,13 +3,16 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
+      <class name="com.test.ActionClassTest"/>
       <class name="com.test.TestAllProducts"/>
       <class name="com.test.Basetest"/>
       <class name="com.test.HomepageTest"/>
       <class name="com.test.TestBabyhugProducts"/>
       <class name="com.test.ProductPageTest"/>
       <class name="com.test.ExtentReportListener"/>
+      <class name="com.test.BrokenLinks"/>
       <class name="com.test.TestProductDetails"/>
+      <class name="com.test.ProductDetailsTest"/>
       <class name="com.test.LoginTest"/>
     </classes>
   </test> <!-- Test -->
